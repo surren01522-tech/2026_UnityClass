@@ -10,7 +10,16 @@ public class Class_01 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        if ( level >= 1)
+        {
+            level = 2;
+        }
+        if (damage == 2.0f)
+        {
+            damage = 5.5f;
+        }
+
+        Debug.Log("변경된 레벨:" + level);
     }
 
     // Update is called once per frame
